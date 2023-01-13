@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7101ACC129718DC30061AE3F /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101ACC029718DC30061AE3F /* CurrencyModel.swift */; };
+		7101ACC3297191360061AE3F /* MainVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101ACC2297191360061AE3F /* MainVIewModel.swift */; };
 		715B853A29706667005DCB12 /* ExchangeCurrencyTestTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715B853929706667005DCB12 /* ExchangeCurrencyTestTaskApp.swift */; };
 		715B853C29706667005DCB12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715B853B29706667005DCB12 /* ContentView.swift */; };
 		715B853E29706669005DCB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 715B853D29706669005DCB12 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7101ACC029718DC30061AE3F /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		7101ACC2297191360061AE3F /* MainVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVIewModel.swift; sourceTree = "<group>"; };
 		715B853629706667005DCB12 /* ExchangeCurrencyTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeCurrencyTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		715B853929706667005DCB12 /* ExchangeCurrencyTestTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrencyTestTaskApp.swift; sourceTree = "<group>"; };
 		715B853B29706667005DCB12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,7 +106,9 @@
 			children = (
 				715B853929706667005DCB12 /* ExchangeCurrencyTestTaskApp.swift */,
 				715B853B29706667005DCB12 /* ContentView.swift */,
+				7101ACC2297191360061AE3F /* MainVIewModel.swift */,
 				715B8568297066E5005DCB12 /* NetworkManager.swift */,
+				7101ACC029718DC30061AE3F /* CurrencyModel.swift */,
 				715B853D29706669005DCB12 /* Assets.xcassets */,
 				715B854229706669005DCB12 /* Persistence.swift */,
 				715B854429706669005DCB12 /* ExchangeCurrencyTestTask.xcdatamodeld */,
@@ -268,7 +274,9 @@
 			files = (
 				715B854329706669005DCB12 /* Persistence.swift in Sources */,
 				715B853C29706667005DCB12 /* ContentView.swift in Sources */,
+				7101ACC129718DC30061AE3F /* CurrencyModel.swift in Sources */,
 				715B8569297066E5005DCB12 /* NetworkManager.swift in Sources */,
+				7101ACC3297191360061AE3F /* MainVIewModel.swift in Sources */,
 				715B854629706669005DCB12 /* ExchangeCurrencyTestTask.xcdatamodeld in Sources */,
 				715B853A29706667005DCB12 /* ExchangeCurrencyTestTaskApp.swift in Sources */,
 			);

@@ -9,14 +9,44 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    /*
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-
+     */
+    var viewModel = MainViewModel()
+    
+    
     var body: some View {
+        
+        ScrollView {
+            VStack {
+                ForEach(0..<10) { indexV in
+                    HStack {
+                        ForEach(0..<3) { indexH in
+                            Text("\(indexV * 3 + indexH)")
+                                .font(.title)
+                                .foregroundColor(.white)
+                                .frame(
+                                    width: 80,
+                                    height: 80
+                                )
+                                .background(Color.accentColor)
+                        }
+                    }
+                }
+            }
+        }
+        .frame(height: .infinity, alignment: .center)
+        .onAppear {
+            viewModel.fetchData()
+        }
+        
+        
+        /*
         NavigationView {
             List {
                 ForEach(items) { item in
@@ -40,8 +70,11 @@ struct ContentView: View {
             }
             Text("Select an item")
         }
+        */
+        
     }
-
+ 
+    /*
     private func addItem() {
         withAnimation {
             let newItem = Item(context: viewContext)
@@ -72,6 +105,7 @@ struct ContentView: View {
             }
         }
     }
+    */
 }
 
 private let itemFormatter: DateFormatter = {
@@ -83,6 +117,6 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()//.environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
