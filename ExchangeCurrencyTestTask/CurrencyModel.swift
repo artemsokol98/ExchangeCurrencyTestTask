@@ -9,9 +9,7 @@ import Foundation
 
 // MARK: - Currency
 struct Currency: Codable {
-    let date, previousDate: Date
-    let previousURL: String
-    let timestamp: Date
+    let date, previousDate, previousURL, timestamp: String
     let valute: [String: Valute]
 
     enum CodingKeys: String, CodingKey {
@@ -21,6 +19,7 @@ struct Currency: Codable {
         case timestamp = "Timestamp"
         case valute = "Valute"
     }
+    
 }
 
 // MARK: - Valute
