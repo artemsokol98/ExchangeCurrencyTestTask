@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Currency
-struct Currency: Codable {
+struct Currency: Decodable {
     let date, previousDate, previousURL, timestamp: String
     let valute: [String: Valute]
 
@@ -23,7 +23,7 @@ struct Currency: Codable {
 }
 
 // MARK: - Valute
-struct Valute: Codable {
+struct Valute: Decodable {
     let id, numCode, charCode: String
     let nominal: Int
     let name: String

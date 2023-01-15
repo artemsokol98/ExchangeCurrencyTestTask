@@ -18,11 +18,19 @@ class MainViewModel {
                 switch result {
                 case .success(let data):
                     guard let data = data as? Currency else { print("Casting failed"); return }
-                    print(data)
+                    //print(data)
+                    self.parseFetchedData(data: data)
                 case .failure(let error):
                     print(error)
                 }
             }
+        }
+    }
+    
+    func parseFetchedData(data: Currency) {
+        for item in data.valute {
+            print(item.key)
+            print(item.value.value)
         }
     }
 }
